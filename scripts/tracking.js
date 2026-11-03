@@ -10,7 +10,7 @@ async function renderTracking() {
 
   let orders;
   try {
-    const response = await fetch('http://localhost:3000/orders');
+    const response = await fetch('/orders');
     orders = await response.json();
   } catch (err) {
     container.innerHTML = '<div>Could not load this order. Is the server running?</div>';

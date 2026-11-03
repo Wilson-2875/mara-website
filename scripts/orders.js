@@ -43,7 +43,7 @@ async function renderOrders() {
   let orders;
 
   try {
-    const response = await fetch('http://localhost:3000/orders');
+    const response = await fetch('/orders');
     orders = await response.json();
   } catch (err) {
     container.innerHTML = '<div>Could not load orders. Is the server running?</div>';

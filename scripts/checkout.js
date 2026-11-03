@@ -200,7 +200,7 @@ document.querySelector('.js-payment-summary').addEventListener('click', async (e
   }
 
   try {
-    const response = await fetch('http://localhost:3000/orders', {
+    const response = await fetch('/orders', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ items: cart })
