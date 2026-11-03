@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mara project</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/products.css">
+</head>
+<body>
+  <header class="mara-header-section">
+
+     <div class="mara-header-left-section">
+      <img src="images/mara-logo.png" alt="" class="mara-logo">
+     </div> 
+     <div class="mara-header-middle-section">
+      <input type="text" placeholder="Search" class="search-bar" name ="main-header">
+      <button class="search-button"><img src="images/search-icon.png" alt="" class="search-icon"></button>
+     </div>
+     <div class="mara-header-right-section">
+
+<a href="orders.html" class="orders-return-link">
+   <div class="return-order-container">
+      <span class="return-text">Returns</span>
+      <span class="order-text">$Orders</span> 
+   </div>
+</a>
+    
+    <a href="checkout.html" class="cart-link">
+     <img src="images/cart-icon.jpeg" alt=""   class="cart-icon">
+      <div class="cart-quantity js-cart-quantity">0</div>
+    </a>
+     <div class="cart-text">Cart</div>
+     </div>
+  </header>
+
+  <div class="main">
+
+<div class="products-grid js-products-grid"></div>
+
+  </div>
+  <script src="scripts/search.js" type="module"></script>
+<script src="scripts/mara.js" type="module"></script>
+</body>
+</html>

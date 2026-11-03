@@ -1,0 +1,91 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mara-header-section{
+  background-color: rgb(28, 28, 61);
+  display: flex;
+  align-items: center;
+  color: white;
+  height: 60px;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.mara-header-left-section{
+  width: 180px;
+}
+.mara-logo{
+  height: 60px;
+  object-fit: contain;
+}
+.mara-header-middle-section{
+  display: flex;
+  max-width: 800px;
+  flex: 1;
+
+}
+.search-bar{
+  flex: 1;
+  padding: 5px;
+  text-align: left;
+}
+.search-icon{
+  height: 20px;
+}
+.search-button{
+  border: none;
+  width: 40px;
+  border: none;
+  background-color: rgb(178, 74, 74);
+}
+.mara-header-right-section{
+  display: flex;
+  width: 200px;
+  justify-content: end;
+  flex-shrink: 0;
+}
+.orders-return-link{
+  color: white;
+  text-decoration: none;
+  align-items: center;
+}
+.return-order-container{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.return-text{
+font-size: 13px;
+
+}
+.order-text{
+  display: block;
+  font-weight: 700;
+}
+.cart-icon{
+  height: 60px;
+ filter: invert(1);
+ mix-blend-mode: screen;
+}
+.cart-link{
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 0px;
+}
+.cart-quantity{
+  position: absolute;
+  top: 12px;
+  left: 37px;
+  color: red;
+}
+.cart-text{
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+}
