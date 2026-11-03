@@ -64,3 +64,14 @@ app.get('/orders', (req, res) => {
 app.listen(PORT, () => {
   console.log(`MARA server is running at http://localhost:${PORT}`);
 });
+
+if (window.matchMedia('(max-width: 600px)').matches) {
+  const nav = document.createElement('nav');
+  nav.className = 'mobile-nav';
+  nav.innerHTML = `
+    <a href="Mara.html">Home</a>
+    <a href="orders.html">Orders</a>
+    <a href="checkout.html">Cart</a>
+  `;
+  document.body.append(nav);
+}

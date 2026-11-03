@@ -1,8 +1,36 @@
+
 body{
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 14px 0;
+    background: #131921;
+    z-index: 100;
+  }
+  .mobile-nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  body {
+    padding-bottom: 60px;
+  }
+}
+
 .mara-header-section{
   background-color: rgb(28, 28, 61);
   display: flex;
